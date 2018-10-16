@@ -39,6 +39,7 @@ from rqt_py_console.py_console_text_edit import PyConsoleTextEdit
 
 
 class PyConsoleWidget(QWidget):
+
     def __init__(self, context=None):
         super(PyConsoleWidget, self).__init__()
         rp = rospkg.RosPack()
@@ -50,5 +51,6 @@ class PyConsoleWidget(QWidget):
             'context': context
         }
         self.py_console.update_interpreter_locals(my_locals)
-        self.py_console.print_message('The variable "context" is set to the PluginContext of this plugin.')
+        self.py_console.print_message(
+            'The variable "context" is set to the PluginContext of this plugin.')
         self.py_console.exit.connect(context.close_plugin)
