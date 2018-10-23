@@ -43,9 +43,11 @@ except ImportError:
 
 
 class PyConsole(Plugin):
+
     """
     Plugin providing an interactive Python console
     """
+
     def __init__(self, context):
         super(PyConsole, self).__init__(context)
         self.setObjectName('PyConsole')
@@ -57,7 +59,8 @@ class PyConsole(Plugin):
         self._widget.setLayout(QVBoxLayout())
         self._widget.layout().setContentsMargins(0, 0, 0, 0)
         if context.serial_number() > 1:
-            self._widget.setWindowTitle(self._widget.windowTitle() + (' (%d)' % context.serial_number()))
+            self._widget.setWindowTitle(
+                self._widget.windowTitle() + (' (%d)' % context.serial_number()))
         self._context.add_widget(self._widget)
 
     def _switch_console_widget(self):
@@ -71,7 +74,8 @@ class PyConsole(Plugin):
             self._console_widget = PyConsoleWidget(self._context)
             self._widget.setWindowTitle('PyConsole')
         if self._context.serial_number() > 1:
-            self._widget.setWindowTitle(self._widget.windowTitle() + (' (%d)' % self._context.serial_number()))
+            self._widget.setWindowTitle(
+                self._widget.windowTitle() + (' (%d)' % self._context.serial_number()))
 
         self._widget.layout().addWidget(self._console_widget)
 
@@ -79,18 +83,22 @@ class PyConsole(Plugin):
         instance_settings.set_value('use_spyderlib', self._use_spyderlib)
 
     def restore_settings(self, plugin_settings, instance_settings):
-        self._use_spyderlib = _has_spyderlib and (instance_settings.value('use_spyderlib', True) in [True, 'true'])
+        self._use_spyderlib = _has_spyderlib and (
+            instance_settings.value('use_spyderlib', True) in [True, 'true'])
         self._switch_console_widget()
 
     def trigger_configuration(self):
         options = [
-            {'title': 'SpyderConsole', 'description': 'Advanced Python console with tab-completion (needs spyderlib to be installed).', 'enabled': _has_spyderlib},
+            {'title': 'SpyderConsole',
+                'description': 'Advanced Python console with tab-completion (needs spyderlib to be installed).', 'enabled': _has_spyderlib},
             {'title': 'PyConsole', 'description': 'Simple Python console.'},
         ]
         dialog = SimpleSettingsDialog(title='PyConsole Options')
-        dialog.add_exclusive_option_group(title='Console Type', options=options, selected_index=int(not self._use_spyderlib))
+        dialog.add_exclusive_option_group(
+            title='Console Type', options=options, selected_index=int(not self._use_spyderlib))
         console_type = dialog.get_settings()[0]
-        new_use_spyderlib = {0: True, 1: False}.get(console_type['selected_index'], self._use_spyderlib)
+        new_use_spyderlib = {0: True, 1: False}.get(
+            console_type['selected_index'], self._use_spyderlib)
         if self._use_spyderlib != new_use_spyderlib:
             self._use_spyderlib = new_use_spyderlib
             self._switch_console_widget()

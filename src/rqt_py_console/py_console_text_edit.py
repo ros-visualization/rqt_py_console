@@ -52,8 +52,10 @@ class PyConsoleTextEdit(ConsoleTextEdit):
         self._interpreter_locals = {}
         self._interpreter = InteractiveInterpreter(self._interpreter_locals)
 
-        self._comment_writer.write('Python %s on %s\n' % (sys.version.replace('\n', ''), sys.platform))
-        self._comment_writer.write('Qt bindings: %s version %s\n' % (QT_BINDING, QT_BINDING_VERSION))
+        self._comment_writer.write('Python %s on %s\n' %
+                                   (sys.version.replace('\n', ''), sys.platform))
+        self._comment_writer.write(
+            'Qt bindings: %s version %s\n' % (QT_BINDING, QT_BINDING_VERSION))
 
         self._add_prompt()
 

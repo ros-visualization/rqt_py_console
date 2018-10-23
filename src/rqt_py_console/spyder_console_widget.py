@@ -37,6 +37,7 @@ from spyderlib.utils.module_completion import moduleCompletion
 
 
 class SpyderConsoleWidget(InternalShell):
+
     def __init__(self, context=None):
         my_locals = {
             'context': context
