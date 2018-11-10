@@ -31,7 +31,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 import os
-import rospkg
+from ament_index_python.resources import get_resource
 
 from python_qt_binding import loadUi
 from python_qt_binding.QtWidgets import QWidget
@@ -42,8 +42,11 @@ class PyConsoleWidget(QWidget):
 
     def __init__(self, context=None):
         super(PyConsoleWidget, self).__init__()
-        rp = rospkg.RosPack()
-        ui_file = os.path.join(rp.get_path('rqt_py_console'), 'resource', 'py_console_widget.ui')
+
+        _, package_path = get_resource('packages', 'rqt_py_console')
+        ui_file = os.path.join(
+            package_path, 'share', 'rqt_py_console', 'resource', 'py_console_widget.ui')
+
         loadUi(ui_file, self, {'PyConsoleTextEdit': PyConsoleTextEdit})
         self.setObjectName('PyConsoleWidget')
 
