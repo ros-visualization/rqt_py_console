@@ -14,13 +14,13 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <exec_depend>ament_index_python</exec_depend>
   <exec_depend version_gte="0.2.19">python_qt_binding</exec_depend>
   <exec_depend>qt_gui</exec_depend>
   <exec_depend>qt_gui_py_common</exec_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>rqt_gui</exec_depend>
   <exec_depend>rqt_gui_py</exec_depend>
-  <exec_depend>ament_index_python</exec_depend>
 
   <export>
     <architecture_independent/>
