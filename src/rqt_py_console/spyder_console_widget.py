@@ -32,9 +32,8 @@
 
 from python_qt_binding.QtGui import QFont
 
-from spyderlib.widgets.internalshell import InternalShell
-from spyderlib.utils.module_completion import moduleCompletion
-
+from spyder.widgets.internalshell import InternalShell
+from spyder.utils.module_completion import moduleCompletion
 
 class SpyderConsoleWidget(InternalShell):
 
