@@ -36,14 +36,13 @@ from qt_gui_py_common.simple_settings_dialog import SimpleSettingsDialog
 from rqt_py_console.py_console_widget import PyConsoleWidget
 
 try:
-    from spyder_console_widget import SpyderConsoleWidget
+    from rqt_py_console.spyder_console_widget import SpyderConsoleWidget
     _has_spyderlib = True
 except ImportError:
     _has_spyderlib = False
 
 
 class PyConsole(Plugin):
-
     """
     Plugin providing an interactive Python console
     """
@@ -90,8 +89,11 @@ class PyConsole(Plugin):
     def trigger_configuration(self):
         options = [
             {'title': 'SpyderConsole',
-                'description': 'Advanced Python console with tab-completion (needs spyderlib to be installed).', 'enabled': _has_spyderlib},
-            {'title': 'PyConsole', 'description': 'Simple Python console.'},
+             'description':
+                'Advanced Python console with tab-completion (needs spyderlib to be installed).',
+             'enabled': _has_spyderlib},
+            {'title': 'PyConsole',
+             'description': 'Simple Python console.'},
         ]
         dialog = SimpleSettingsDialog(title='PyConsole Options')
         dialog.add_exclusive_option_group(
