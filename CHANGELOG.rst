@@ -2,6 +2,13 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.0 (2018-12-11)
+------------------
+* spyderlib -> spyder (`#5 <https://github.com/ros-visualization/rqt_py_console/issues/5>`_)
+* ros2 port (`#3 <https://github.com/ros-visualization/rqt_py_console/issues/3>`_)
+* autopep8 (`#2 <https://github.com/ros-visualization/rqt_py_console/issues/2>`_)
+* Contributors: Mike Lautman
+
 0.4.8 (2017-04-28)
 ------------------
 
