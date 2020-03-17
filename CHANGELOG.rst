@@ -2,6 +2,12 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* use conditional dependencies for Python 3 (`#7 <https://github.com/ros-visualization/rqt_py_console/issues/7>`_)
+* bump CMake minimum version to avoid CMP0048 warning
+* autopep8 (`#2 <https://github.com/ros-visualization/rqt_py_console/issues/2>`_)
+
 0.4.8 (2017-04-28)
 ------------------
 
