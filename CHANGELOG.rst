@@ -2,8 +2,8 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.10 (2021-04-21)
+-------------------
 * Merge pull request `#10 <https://github.com/ros-visualization/rqt_py_console/issues/10>`_ from ros-visualization/sloretz-update-maintainer
   Update maintainer in package.xml
 * Update maintainer in package.xml
