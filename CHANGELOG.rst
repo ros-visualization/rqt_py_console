@@ -2,6 +2,14 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#10 <https://github.com/ros-visualization/rqt_py_console/issues/10>`_ from ros-visualization/sloretz-update-maintainer
+  Update maintainer in package.xml
+* Update maintainer in package.xml
+* fix shebang line for python3 (`#9 <https://github.com/ros-visualization/rqt_py_console/issues/9>`_)
+* Contributors: Michael Carroll, Mikael Arguedas, Shane Loretz
+
 0.4.9 (2020-03-17)
 ------------------
 * use conditional dependencies for Python 3 (`#7 <https://github.com/ros-visualization/rqt_py_console/issues/7>`_)
