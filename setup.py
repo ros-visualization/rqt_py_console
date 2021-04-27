@@ -4,7 +4,7 @@ package_name = 'rqt_py_console'
 
 setup(
     name=package_name,
-    version='1.0.0',
+    version='1.0.1',
     packages=[package_name],
     package_dir={'': 'src'},
     data_files=[
