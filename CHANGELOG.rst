@@ -2,6 +2,9 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.0 (2022-05-10)
+------------------
+
 1.0.2 (2021-08-31)
 ------------------
 * Fix modern setuptools warning about dashes instead of underscores (`#11 <https://github.com/ros-visualization/rqt_py_console/issues/11>`_)
