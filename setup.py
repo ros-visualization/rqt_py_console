@@ -18,8 +18,8 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     author='Dorian Scholz',
-    maintainer='Dirk Thomas, Dorian Scholz, Michael Lautman',
-    maintainer_email='dthomas@osrfoundation.org',
+    maintainer='Dharini Dutia',
+    maintainer_email='dharini@openrobotics.org',
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',
