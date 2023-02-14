@@ -2,8 +2,8 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.1 (2023-02-14)
+------------------
 * [rolling] Update maintainers - 2022-11-07 (`#13 <https://github.com/ros-visualization/rqt_py_console/issues/13>`_)
 * Contributors: Audrow Nash, Jacob Perron
 
