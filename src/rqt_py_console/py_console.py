@@ -99,6 +99,9 @@ class PyConsole(Plugin):
         dialog.add_exclusive_option_group(
             title='Console Type', options=options, selected_index=int(not self._use_spyderlib))
         console_type = dialog.get_settings()[0]
+        if console_type is None:
+            # The console_type can be None if the user Canceled the dialog
+            return
         new_use_spyderlib = {0: True, 1: False}.get(
             console_type['selected_index'], self._use_spyderlib)
         if self._use_spyderlib != new_use_spyderlib:
