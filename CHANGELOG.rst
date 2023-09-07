@@ -2,6 +2,11 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix a crash in the rqt_py_console dialog box. (`#15 <https://github.com/ros-visualization/rqt_py_console/issues/15>`_)
+* Contributors: Chris Lalancette
+
 1.2.0 (2023-04-28)
 ------------------
 
