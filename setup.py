@@ -31,6 +31,7 @@ setup(
         'rqt_py_console is a Python GUI plugin providing an interactive Python console.'
     ),
     license='BSD',
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'rqt_py_console = ' + package_name + '.main:main',
