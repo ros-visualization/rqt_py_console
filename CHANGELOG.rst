@@ -2,6 +2,11 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add in test dependency on pytest. (`#16 <https://github.com/ros-visualization/rqt_py_console/issues/16>`_)
+* Contributors: Chris Lalancette
+
 1.2.1 (2023-09-07)
 ------------------
 * Fix a crash in the rqt_py_console dialog box. (`#15 <https://github.com/ros-visualization/rqt_py_console/issues/15>`_)
