@@ -2,6 +2,12 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add the standard tests to rqt_py_console. (`#19 <https://github.com/ros-visualization/rqt_py_console/issues/19>`_)
+* Remove CODEOWNERS (`#17 <https://github.com/ros-visualization/rqt_py_console/issues/17>`_)
+* Contributors: Alejandro Hernández Cordero, Chris Lalancette
+
 1.3.0 (2024-04-26)
 ------------------
 
