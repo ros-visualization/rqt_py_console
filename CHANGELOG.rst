@@ -2,8 +2,8 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.11 (2025-04-10)
+-------------------
 * Import setup from setuptools instead of distutils.core (`#14 <https://github.com/ros-visualization/rqt_py_console/issues/14>`_)
 * Contributors: Arne Hitzmann
 
