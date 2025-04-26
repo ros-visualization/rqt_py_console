@@ -2,8 +2,8 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.12 (2025-04-26)
+-------------------
 * Bump cmake_minimum_required to avoid deprecation (`#20 <https://github.com/ros-visualization/rqt_py_console/issues/20>`_)
 * Contributors: Arne Hitzmann
 
