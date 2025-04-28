@@ -2,6 +2,9 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.0 (2025-04-28)
+------------------
+
 1.4.0 (2025-02-02)
 ------------------
 * Add the standard tests to rqt_py_console. (`#19 <https://github.com/ros-visualization/rqt_py_console/issues/19>`_)
