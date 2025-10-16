@@ -2,6 +2,11 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.1 (2025-10-16)
+------------------
+* fix setuptools deprecations (`#21 <https://github.com/ros-visualization/rqt_py_console/issues/21>`_)
+* Contributors: mosfet80
+
 1.5.0 (2025-04-28)
 ------------------
 
