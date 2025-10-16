@@ -2,6 +2,11 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.1 (2025-10-16)
+------------------
+* fix setuptools deprecations (backport `#21 <https://github.com/ros-visualization/rqt_py_console/issues/21>`_) (`#22 <https://github.com/ros-visualization/rqt_py_console/issues/22>`_)
+* Contributors: mergify[bot]
+
 1.4.0 (2025-02-02)
 ------------------
 * Add the standard tests to rqt_py_console. (`#19 <https://github.com/ros-visualization/rqt_py_console/issues/19>`_)
