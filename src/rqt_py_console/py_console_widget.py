@@ -55,4 +55,4 @@ class PyConsoleWidget(QWidget):
         self.py_console.update_interpreter_locals(my_locals)
         self.py_console.print_message(
             'The variable "context" is set to the PluginContext of this plugin.')
-        self.py_console.exit.connect(context.close_plugin)
+        self.py_console.widget_exit.connect(context.close_plugin)

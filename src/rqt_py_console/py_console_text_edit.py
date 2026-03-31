@@ -33,12 +33,13 @@ import sys
 
 from python_qt_binding import QT_BINDING, QT_BINDING_VERSION
 from python_qt_binding.QtCore import Qt, Signal
+from python_qt_binding.QtGui import QColorConstants
 
 from qt_gui_py_common.console_text_edit import ConsoleTextEdit
 
 
 class PyConsoleTextEdit(ConsoleTextEdit):
-    _color_stdin = Qt.darkGreen
+    _color_stdin = QColorConstants.DarkGreen
     _multi_line_char = ':'
     _multi_line_indent = '    '
     _prompt = ('>>> ', '... ')  # prompt for single and multi line
