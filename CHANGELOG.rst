@@ -2,6 +2,12 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.2 (2026-04-13)
+------------------
+* Add Qt6 compatibility (`#25 <https://github.com/ros-visualization/rqt_py_console/issues/25>`_)
+  Co-authored-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>
+* Contributors: Shane Loretz
+
 1.5.1 (2025-10-16)
 ------------------
 * fix setuptools deprecations (`#21 <https://github.com/ros-visualization/rqt_py_console/issues/21>`_)
