@@ -2,6 +2,9 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.0 (2026-05-06)
+------------------
+
 1.5.2 (2026-04-13)
 ------------------
 * Add Qt6 compatibility (`#25 <https://github.com/ros-visualization/rqt_py_console/issues/25>`_)
