@@ -46,15 +46,16 @@ class PyConsoleTextEdit(ConsoleTextEdit):
     widget_exit = Signal()
 
     def __init__(self, parent=None):
-        super(PyConsoleTextEdit, self).__init__(parent)
+        super().__init__(parent)
 
         self._interpreter_locals = {}
         self._interpreter = InteractiveInterpreter(self._interpreter_locals)
 
-        self._comment_writer.write('Python %s on %s\n' %
-                                   (sys.version.replace('\n', ''), sys.platform))
+        python_version = sys.version.replace('\n', '')
         self._comment_writer.write(
-            'Qt bindings: %s version %s\n' % (QT_BINDING, QT_BINDING_VERSION))
+            f'Python {python_version} on {sys.platform}\n')
+        self._comment_writer.write(
+            f'Qt bindings: {QT_BINDING} version {QT_BINDING_VERSION}\n')
 
         self._add_prompt()
 

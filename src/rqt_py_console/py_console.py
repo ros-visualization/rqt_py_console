@@ -44,7 +44,7 @@ class PyConsole(Plugin):
     """Plugin providing an interactive Python console."""
 
     def __init__(self, context):
-        super(PyConsole, self).__init__(context)
+        super().__init__(context)
         self.setObjectName('PyConsole')
 
         self._context = context
@@ -55,7 +55,7 @@ class PyConsole(Plugin):
         self._widget.layout().setContentsMargins(0, 0, 0, 0)
         if context.serial_number() > 1:
             self._widget.setWindowTitle(
-                self._widget.windowTitle() + (' (%d)' % context.serial_number()))
+                self._widget.windowTitle() + (f' ({context.serial_number()})'))
         self._context.add_widget(self._widget)
 
     def _switch_console_widget(self):
@@ -70,7 +70,7 @@ class PyConsole(Plugin):
             self._widget.setWindowTitle('PyConsole')
         if self._context.serial_number() > 1:
             self._widget.setWindowTitle(
-                self._widget.windowTitle() + (' (%d)' % self._context.serial_number()))
+                self._widget.windowTitle() + (f' ({self._context.serial_number()})'))
 
         self._widget.layout().addWidget(self._console_widget)
 
