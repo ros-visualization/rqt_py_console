@@ -40,7 +40,7 @@ from rqt_py_console.py_console_text_edit import PyConsoleTextEdit
 class PyConsoleWidget(QWidget):
 
     def __init__(self, context=None):
-        super(PyConsoleWidget, self).__init__()
+        super().__init__()
 
         _, package_path = get_resource('packages', 'rqt_py_console')
         ui_file = os.path.join(
