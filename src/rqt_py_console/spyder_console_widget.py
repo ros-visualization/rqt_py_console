@@ -40,7 +40,7 @@ class SpyderConsoleWidget(InternalShell):
         my_locals = {
             'context': context
         }
-        super(SpyderConsoleWidget, self).__init__(namespace=my_locals)
+        super().__init__(namespace=my_locals)
         self.setObjectName('SpyderConsoleWidget')
         self.set_pythonshell_font(QFont('Mono'))
         self.interpreter.restore_stds()
@@ -51,7 +51,7 @@ class SpyderConsoleWidget(InternalShell):
 
     def run_command(self, *args):
         self.interpreter.redirect_stds()
-        super(SpyderConsoleWidget, self).run_command(*args)
+        super().run_command(*args)
         self.flush()
         self.interpreter.restore_stds()
 
