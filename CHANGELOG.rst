@@ -2,6 +2,11 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.1 (2026-06-17)
+------------------
+* Use logger.warning(), f-string and super() (`#26 <https://github.com/ros-visualization/rqt_py_console/issues/26>`_)
+* Contributors: Alejandro Hernández Cordero
+
 2.0.0 (2026-05-06)
 ------------------
 
