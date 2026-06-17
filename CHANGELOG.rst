@@ -2,6 +2,11 @@
 Changelog for package rqt_py_console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.3 (2026-06-17)
+------------------
+* Use logger.warning(), f-string and super() (backport `#26 <https://github.com/ros-visualization/rqt_py_console/issues/26>`_) (`#27 <https://github.com/ros-visualization/rqt_py_console/issues/27>`_)
+* Contributors: mergify[bot]
+
 1.5.2 (2026-04-13)
 ------------------
 * Add Qt6 compatibility (`#25 <https://github.com/ros-visualization/rqt_py_console/issues/25>`_)
